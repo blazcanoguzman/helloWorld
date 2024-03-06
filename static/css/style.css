@@ -1,0 +1,30 @@
+p{ color: darkgrey;
+    font-size: 16px}
+h2{  color: maroon;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline}
+
+table, td,th {
+    border-style: solid;
+    border-width: thick;
+    border-color: maroon;
+    border-collapse: collapse}
+
+/*This is a style for a special paragraph so that it will show up italicized and underlined*/
+p#italicized { color: darkgrey;
+            font-size:12px;
+            font-style: italic;
+            text-decoration: underline}
+/* This rule block is to be added to the title page*/
+.title-format {
+    background-color: maroon;
+    width: 150px;
+    margin:150px;
+    padding:150px;
+    color: darkgrey;
+    font-weight: bold}
+
+/* Special rule block to be applied to any images so that they are formatted correctly*/
+.logo { width:267px;
+       height:72px}
