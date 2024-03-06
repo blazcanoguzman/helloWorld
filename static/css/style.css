@@ -4,7 +4,7 @@ h2{  color: maroon;
     font-weight: bold;
     font-size: 20px;
     text-decoration: underline}
-
+/* Adding border lines to the table, the lines will be maroon*/
 table, td,th {
     border-style: solid;
     border-width: thick;
