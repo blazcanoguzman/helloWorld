@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Favorite Courses</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block page_title %}Favorite Courses{% endblock %}
+
+<!-- Header that displays page title to user -->
+{% block page_head %} Favorite Course {% endblock %}
+
+<!-- Prompt that displays users favorite class -->
+{% block page_content %}
+<p> Hello!</p>
+<!-- System will enter the favorite class depending on the GET within URL -->
+<p> You entered your favorite courses as: {{ subject }} {{ course_number}}</p>
+
+{% endblock %}
