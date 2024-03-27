@@ -11,6 +11,7 @@ def hello_world():  # put application's code here
 def hello():  # put application's code here
     return render_template('hello.html')
 
+
 @app.route('/about')
 def about():  # put application's code here
     return render_template('about.html')
@@ -21,9 +22,20 @@ def aboutcss():  # put application's code here
 
 @app.route('/favorite-course')
 def favoritecourse():  # put application's code here
-    print('First favorite course: ' + request.args.get('first_course'))
-    print('Second favorite course: ' + request.args.get('second_course'))
-    return render_template('favorite-course.html')
+    subject = request.args.get('subject')
+    course_number = request.args.get('course_number')
+
+    print('Subject entered: ' + request.args.get('subject'))
+    print('Course number entered: ' + request.args.get('course_number'))
+    return render_template('favorite-course.html', subject=subject, course_number=course_number)
+
+@app.route('/contact',methods=['GET', 'POST'])
+def contact():  # put application's code here
+   if request.method == 'POST':
+       return render_template('contact.html', form_submitted=True)
+   else:
+       return render_template('contact.html')
+
 
 if __name__ == '__main__':
     app.run()
