@@ -33,5 +33,3 @@ with app.app_context():
                       last_name=each_user["last_name"], password=each_user["password"], role=each_user["role"])
         db.session.add(a_user)
         db.session.commit()
-
-
