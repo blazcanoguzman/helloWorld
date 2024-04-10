@@ -223,7 +223,7 @@ def page_not_found(e):
 @login_required
 @role_required(['MANAGER', 'ADMIN'])
 def training():
-    return render_template('training.html')
+    return render_template('training.html', name='Brandon', email='blazcano@umd.edu')
 
 if __name__ == '__main__':
     app.run(debug=True)
